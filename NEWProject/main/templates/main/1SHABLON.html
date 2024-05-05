@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>MAIN SHABLON</title>
-</head>
-<body>
+{% extends 'main/base.html' %}
+
+{% block title  %}
+Шаблон
+{% endblock %}
+
+{% block content  %}
     <div class="col">
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Карточка</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Карточка</text></svg>
@@ -15,11 +15,8 @@
                   <button type="button" class="btn btn-sm btn-outline-secondary">Посмотреть</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Добавить</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-    <H1>NEW SHABLON</H1>
-</body>
-</html>
+{% endblock %}
