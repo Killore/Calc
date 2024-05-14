@@ -9,3 +9,14 @@ class Task(models.Model):
     class Meta:
         verbose_name = "Задача"
         verbose_name_plural = "Задачи"
+
+class Shablon(models.Model):
+    zagol = models.CharField("Заголовок", max_length=60)
+    texts = models.TextField('Основной текст')
+
+    def __str__(self):
+        return self.zagol
+
+    class Mel:
+        verbose_name = "Статья"
+        verbose_name_plural = "Статьи"
